@@ -48,7 +48,7 @@ load_gcs_to_big_query
 
 <img width="646" alt="image" src="https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/18f13536-7d6d-41c8-9606-5386c6afc23e">
 
-
+https://lookerstudio.google.com/s/rSVxjildIjE
 ## How data evaluated?
 Used google looker studio. 
 <img width="792" alt="image" src="https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/009683b8-038f-4cf9-8a1f-05118235ad39">
@@ -77,6 +77,44 @@ The top left can choose the date range.
 We can see the direct effect of weather 
 - Most popular months for rides are July, August and September
 - Least popular months are December, February and January
+
+Which stations are popular? 
+There are null start and end stations. I want to keep them in total numbers 
+but to determine popular stations, I filtered the null values for accuracy by adding filter in table setup. 
+
+
+<img width="718" alt="image" src="https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/97c3f3c8-43ec-4173-98cb-2fe285a0f5a5">
+
+
+# How to run project and prerequisites:
+
+- Google Cloud account.
+- Clone repo: [https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project.git]
+- Install Docker: 
+- Run `docker compose build`
+- Run `docker compose up`
+
+- Create a service account. If you need a refresher on creating a GCP service account, check Week1 new service account section. Download the JSON key and place it in project.
+- Find 'io_config.yaml and set the location for json file.
+  - <img width="293" alt="image" src="https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/7043fb1f-477d-4db7-b35d-5a212ab5fd30">
+   
+
+Once Docker compose up done. Navigate to: [http://localhost:6789]
+- Open capital_bikeshare pipeline.
+- Click edit pipeline
+<img width="561" alt="image" src="https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/eac5620d-dfb4-43e6-8129-4944c2edd09b">
+
+- To process the set variable 2023 and run.
+- Set the global variable for 2022 and run.
+
+- Once all steps done you can check
+    - GCS to see parquet raw files.
+    - Check BiqQuery for bike_share table.
+ 
+- You can make the connection for https://lookerstudio.google.com/ by using BigQuery.
+  
+
+
 
 
 

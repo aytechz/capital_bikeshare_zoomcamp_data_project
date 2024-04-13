@@ -132,6 +132,8 @@ Follow these steps to set up and run the project:
 
 ### Visualization
 - Establish a connection to [Google Looker Studio](https://lookerstudio.google.com/) using BigQuery to visualize the data.
+- [Looker Studio Dashboard](https://lookerstudio.google.com/u/0/reporting/547d5d96-6837-482b-813a-5e34a72c01b3/page/T90uD)
+
 
   
 

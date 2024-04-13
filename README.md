@@ -91,32 +91,48 @@ The data covers the years **2022** and **2023**. Below are some of the key insig
 - While there are null values for start and end stations, these have been retained in the total counts for completeness. However, to determine which stations are popular, null values were filtered out for accuracy by adjusting the table setup.
 
 
-# How to run project and prerequisites:
+# How to Run Project and Prerequisites
 
-- Google Cloud account.
-- Clone repo: [https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project.git]
-- Install Docker: 
-- Run `docker compose build`
-- Run `docker compose up`
+Follow these steps to set up and run the project:
 
-- Create a service account. If you need a refresher on creating a GCP service account, check Week1 new service account section. Download the JSON key and place it in project.
-- Find 'io_config.yaml and set the location for json file.
-  - <img width="293" alt="image" src="https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/7043fb1f-477d-4db7-b35d-5a212ab5fd30">
-   
+### Prerequisites
+- **Google Cloud account**: Ensure you have an active account.
+- **Clone the repository**: Clone the project using the command below.
 
-Once Docker compose up done. Navigate to: [http://localhost:6789]
-- Open capital_bikeshare pipeline.
-- Click edit pipeline
-<img width="561" alt="image" src="https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/eac5620d-dfb4-43e6-8129-4944c2edd09b">
+`git clone https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project.git`
 
-- To process the set variable 2023 and run.
-- Set the global variable for 2022 and run.
+- **Install Docker**: Make sure Docker is installed on your machine.
 
-- Once all steps done you can check
-    - GCS to see parquet raw files.
-    - Check BiqQuery for bike_share table.
- 
-- You can make the connection for https://lookerstudio.google.com/ by using BigQuery.
+### Setup and Running
+- **Build the Docker environment**:
+
+`docker compose build`
+
+- **Start the Docker environment**:
+
+`docker compose up`
+
+
+### Configuration
+- **Create a GCP service account**: Refer to the 'Week 1 new service account section' if you need help creating one. Download the JSON key and place it in the project directory.
+- **Set up `io_config.yaml`**: Adjust the location of your JSON file as shown in the example below:
+![io_config Example](https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/7043fb1f-477d-4db7-b35d-5a212ab5fd30)
+
+### Running the Pipeline
+- Once Docker compose is up, navigate to [http://localhost:6789].
+- Open the **capital_bikeshare** pipeline.
+- Click **edit pipeline**:
+![Edit Pipeline](https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/eac5620d-dfb4-43e6-8129-4944c2edd09b)
+- Set the global variables for **2023** and **2022**, and run the pipeline for each year accordingly.
+
+### Verification
+- After completing the steps, check the following:
+- **Google Cloud Storage (GCS)** to see the raw Parquet files.
+- **Google BigQuery** for the **bike_share** table.
+
+### Visualization
+- Establish a connection to [Google Looker Studio](https://lookerstudio.google.com/) using BigQuery to visualize the data.
+
   
 
 

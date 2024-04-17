@@ -2,7 +2,10 @@
 
 **Data source choosen **
   from: https://capitalbikeshare.com/system-data
-Data is published by month and comes in CSV format.  
+Data is published by month and comes in CSV format.
+
+![image](https://github.com/aytechz/capital_bikeshare_zoomcamp_data_project/assets/42274990/8feaf480-078b-4495-b994-7b60a0d25884)
+
 
 ### **Understanding the Data:**
 
